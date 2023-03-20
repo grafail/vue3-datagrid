@@ -9,9 +9,11 @@ module.exports = {
     path: path.resolve(__dirname, '../dist'),
     publicPath: 'none',
     filename: '[name].js',
-    library: 'VGrid',
-    libraryTarget: 'umd',
-    umdNamedDefine: true
+      name: 'VGrid',
+      type: 'umd',
+      umdNamedDefine: true
+    },
+    globalObject: 'this'
   },
   externals: [
     'vue',
